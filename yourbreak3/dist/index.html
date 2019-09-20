@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="yourownbreakingnews.com, breaking news generator, Break your own news to the internet, have fun">
+    <title>Your Own Breaking News | Breaking News Generator</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,regular,bold" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142391679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142391679-1');
+</script>
+
+</head>
+<body>
+	<div class="columns masthead">
+		<div class="container">
+		<div class="column ">
+			<h1>yourownbreakingnews</h1>
+		</div></div>
+	</div>
+	<section class="section">
+   
+	<div class="container">
+		
+	<div class="columns">
+		<div class="column is-one-third">
+
+	<div class="field">
+  <div class="control">
+    <input class="input " type="text" id="mainText" placeholder="Headline">
+  </div>
+</div>
+
+	<div class="field">
+  <div class="control">
+    <input class="input " type="text" id="smallText" placeholder="Subtext">
+  </div>
+</div>
+	
+
+	<div class="file">
+  <label class="file-label">
+    <input class="file-input" type="file" id="imageLoader" @change="updateCanvasImage" accept="image/*">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-camera"></i>
+      </span>
+      <span class="file-label">
+        Choose a photo...
+      </span>
+    </span>
+  </label>
+</div>
+	</div>
+	
+	 <div  style="position: relative; padding:0;margin:0;" id="testdiv" class="column">
+        <canvas id="imageCanvas" ref="imageCanvas" width="1280px" height="720px" style="position: relative; "></canvas>
+         <canvas id="imageCanvas2" ref="imageCanvas2" width="1280px" height="720px" style="position: absolute; right: 0; top: 0; z-index: 1;"></canvas>
+
+</div>
+
+    </div>
+    <div class="columns" id="downloadB>
+    	<div class="column">
+	<a class="button" id="downloadButton">Download</a>
+	</div>
+
+        <h3 id="showText"></h3>
+        <h4 id="showText2"></h4>
+        <img id="img">
+    </div>
+
+    <div class="columns" >
+      <div class="column">
+  <p>Follow me <a  href="https://twitter.com/fixitsammie">@fixitsammie</a> on <a  href="https://twitter.com/fixitsammie">twitter</a> for cool apps and new updates</p>
+  </div>
+
+       
+    </div>
+
+</div>
+</section>
+</body>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="main.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</html>

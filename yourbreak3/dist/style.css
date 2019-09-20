@@ -1,0 +1,83 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.w100 {
+  font-weight: 100;
+}
+.w200 {
+  font-weight: 200;
+}
+.w300 {
+  font-weight: 300;
+}
+.w400 {
+  font-weight: 400;
+}
+
+    .intro {
+        width: 35%;
+        padding: 20px;
+    }
+
+
+    .intro__text {
+        font-size: 90%;
+    }
+
+    #testdiav {
+        width: 20%;
+        padding-right: 20px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 135px;
+    }
+
+
+
+
+#imageCanvas,#imageCanvas2 {
+    width: 100% !important;
+    height: auto;
+    display:block;
+}
+.main1{
+    display: inline-block;
+    float:left;
+    width: 38%;
+    text-align:center;
+  
+
+}
+input{
+     display: block;
+     margin-bottom: 10px;
+}
+
+#testdiv1 {
+    display: inline-block;
+    width: 52%;
+    vertical-align:top;
+    text-align: center;
+    float:right;
+    clear:none;
+    
+}
+.contaidner{
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#downloadB{
+    float:left;
+clear:both;
+bold;
+}
+.masthead{
+    background-color: red;
+    color:white;
+    margin-top:0px;
+    margin-bottom:20px;
+}
+#test-div{display: block;padding:0;clear:both;height:700px;min-height: 200px;}
